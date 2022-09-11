@@ -1,0 +1,11 @@
+#include <main.h>
+#include <BMP085.c>
+
+void main(){
+   bmp085Calibration();
+   while(true){
+      a=BMP085Temperature;
+      printf("T[c]: %.1g  \n\r",a);
+      delay_ms(500);
+   }
+}

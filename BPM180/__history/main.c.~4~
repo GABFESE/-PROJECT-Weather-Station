@@ -1,0 +1,13 @@
+#include <main.h>
+#include "BMP085.c"
+
+void main (){
+   inicializa_BMP085();
+   delay_ms(100);
+   
+   while (1){
+   printf(lcd_putc,"T: %.1g ",LeeTemperatura_BMP085(DescargaTemp_BMP085()));
+   
+   printf(lcd_putc,"P: %0.2g [hPa]",LeePresion_BMP085(DescargaPres_BMP085()));
+   }
+}

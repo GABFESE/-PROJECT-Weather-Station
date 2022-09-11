@@ -1,0 +1,143 @@
+000     @SCRATCH
+001     @SCRATCH
+001     _RETURN_
+002     @SCRATCH
+003     @SCRATCH
+004.0   Time_out
+005     T_byte1
+006     T_byte2
+007     RH_byte1
+008     RH_byte2
+009     CheckSum
+00A-00B Temp
+00C-00D RH
+00E-011 Temp2
+012-015 RH2
+016-017 @sprintf_string
+018-01B Temperatura
+01C-01F Humedad
+020-023 @PRINTF_L32D_614FPFPF.P1
+020     dat_DHT22.selector
+020     main.@SCRATCH1
+021-022 @ITOF.P1
+021     Read_Data.i
+021-022 @MULS1616.P1
+021-024 @DIVFF.P2
+021     dat_DHT22.@SCRATCH1
+021     @PSTRINGC_614.@SCRATCH1
+022     @delay_ms1.P1
+022     Read_Data.k
+022     dat_DHT22.@SCRATCH2
+022     @PSTRINGC_614.@SCRATCH2
+023-024 @MULS1616.P1
+023     Read_Data._data
+024     @PRINTF_L32D_614FPFPF.P1
+024     Read_Data.@SCRATCH1
+025-028 @DIVFF.P1
+025     @MULS1616.@SCRATCH1
+025     @PRINTF_L32D_614FPFPF.@SCRATCH1
+026     @MULS1616.@SCRATCH2
+026     @PRINTF_L32D_614FPFPF.@SCRATCH2
+027     @PRINTF_L32D_614FPFPF.@SCRATCH3
+028     @PRINTF_L32D_614FPFPF.@SCRATCH4
+029     @DIVFF.@SCRATCH1
+029     @PRINTF_L32D_614FPFPF.@SCRATCH5
+02A     @DIVFF.@SCRATCH2
+02A     @PRINTF_L32D_614FPFPF.@SCRATCH6
+02B     @DIVFF.@SCRATCH3
+02B     @PRINTF_L32D_614FPFPF.@SCRATCH7
+02C     @DIVFF.@SCRATCH4
+02C     @PRINTF_L32D_614FPFPF.@SCRATCH8
+02D-030 @MULFF.P1
+02D-030 @DIV3232.P2
+02D     @PUTCHAR_1_.P3
+02D-030 @FTOSD.P4
+02D     @DIVFF.@SCRATCH5
+02E     @DIVFF.@SCRATCH6
+031-034 @MULFF.P1
+031-034 @DIV3232.P2
+031     @FTOSD.@SCRATCH1
+035     @MULFF.@SCRATCH1
+035     @DIV3232.@SCRATCH1
+036     @MULFF.@SCRATCH2
+036     @DIV3232.@SCRATCH2
+037     @MULFF.@SCRATCH3
+037     @DIV3232.@SCRATCH3
+038     @DIV3232.@SCRATCH4
+039     @DIV3232.@SCRATCH5
+FB4.6   C1OUT
+FB4.7   C2OUT
+FBB     CCP_2_LOW
+FBB     CCP_2
+FBC     CCP_2_HIGH
+FBE     CCP_1_LOW
+FBE     CCP_1
+FBF     CCP_1_HIGH
+FE1-FE2 @WRITE_PACKED_MEMORY.P1
+FE1-FE2 @READ_PACKED_MEMORY.P2
+FE9-FEA @WRITE_PACKED_MEMORY.P1
+FE9-FEA @READ_PROGRAM_MEMORY.P2
+FE9-FEA @WRITE_PROGRAM_MEMORY.P3
+FE9-FEA @READ_PACKED_MEMORY.P4
+FF6-FF8 @READ_PROGRAM_MEMORY.P1
+FF6-FF8 @WRITE_PROGRAM_MEMORY.P2
+
+ROM Allocation:
+000004  @const635.call
+000010  @const648.call
+000022  @const649.call
+000040  @delay_ms1
+000066  @PUTCHAR_1_
+0000A4  Start_signal
+0000C0  check_response
+0000EA  Read_Data
+00017A  @PSTRINGC_614
+00019A  @MULS1616
+0001EC  @ITOF
+000222  @DIVFF
+00037C  dat_DHT22
+0004FA  @MULFF
+0005EE  @FTOSD
+00062E  @DIV3232
+0006BC  @PRINTF_L32D_614FPFPF
+000834  @cinit1
+000834  main
+000852  @cinit2
+
+Project Directory:
+    E:\Trabajos U\ELECTIVA INSTRUMENTACION\PROYECTO\DHT22\
+
+Project Files:
+    main.c                                                  [16-feb.-20 20:19  CRC=CC77E8C6]
+    main.h                                                  [16-feb.-20 16:43  CRC=D872A938]
+    C:\Program Files (x86)\PICC\Devices\18F2550.h           [02-feb.-20 10:26  CRC=634C93A3]
+    DHT22.c                                                 [16-feb.-20 20:20  CRC=D0819F45]
+
+Source signature=A93A642B
+Program memory checksum=0000
+Program memory CRC=0000
+Hex file CRC=4718
+
+Units:
+    main (main)
+
+Compiler Settings:
+    Processor:      PIC18F2550
+    Pointer Size:   16
+    ADC Range:      0-1023
+    Opt Level:      9
+    Short,Int,Long: UNSIGNED: 1,8,16
+    Float,Double:   32,32
+    Compile Mode:       CCS5
+
+Output Files:
+    XREF file:   main.xsym
+    Errors:      main.err
+    Ext Symbols: main.esym
+    INHX32:      main.hex
+    Symbols:     main.sym
+    List:        main.lst
+    Debug/COFF:  main.cof
+    Project:     main.ccspjt
+    Call Tree:   main.tre
+    Statistics:  main.STA

@@ -1,0 +1,107 @@
+#include <main.h>
+#include <SD.c>
+#include <DS1307.c>
+#include <DHT22.c>
+#include <BMP085.c>
+////////////////////////////////////////////////////////////////////////////////////////
+RTC_Time *mytime;
+int Humss,Tempss;
+float Temperatura,Humedad,Temps,Presions;
+char txt[50],x=0,y=0,z=0;
+const int8 comillas = '"';
+long Press=0;
+
+void rtc_print(){
+  printf("TIME: %02u:%02u:%02u", mytime->hours, mytime->minutes, mytime->seconds);
+  printf(" DATE: %02u/%02u/20%02u\r\n", mytime->day, mytime->month, mytime->year);
+}
+////////////////////////////////////////////////////////////////////////////////////////
+void main(){
+   set_tris_c(0x00);
+   output_low(PIN_C6);
+   delay_ms(100);
+   output_high(PIN_C6);
+   delay_ms(1000);  // wait a second
+   mytime = RTC_Get();
+   rtc_print();
+   delay_ms(1000);  // wait a second
+   while(1){
+      x=0;
+      z=0;
+      mytime = RTC_Get();
+      rtc_print();
+////////////////////////////////////////////////////////////////////////////////////////  
+      Humedad=dat_DHT22(1);             
+      printf("Humedad: %0.1f\r\n",Humedad);
+      delay_ms(500);
+ ////////////////////////////////////////////////////////////////////////////////////////    
+      bmp085Calibration();
+      delay_ms(500);
+      Temps = BMP085Temperature(); 
+      Presions = BMP085Pressure();  //  calls for temperature first
+      delay_ms(100);
+      printf("Temperatura: %.3g\r\nPresion: %.3g\r\n\r\n",Temps,Presions);
+      delay_ms(1000);
+////////////////////////////////////////////////////////////////////////////////////////    
+      delay_ms(100);
+      initialize();
+      delay_ms(100);
+
+      open_doc();
+      sprintf(txt, "%02u/%02u/20%02u %02u:%02u:%02u | %0.1f | %.3g | %.3g\r\n",mytime->day,mytime->month,mytime->year,mytime->hours, mytime->minutes, mytime->seconds,Humedad,Temps,Presions);
+      if(fatputs(txt, &myfile) == 0){
+        printf(txt);
+      }
+      else{
+        printf("  writing error \r\n");
+      }
+      
+      enter();
+      close_doc();
+      delay_ms(1000);
+      Humss=(int)Humedad;
+      Tempss=(int)Temps;
+      Press=(long)Presions;
+      printf("%lu",Press);
+////////////////////////////////////////////////////////////////////////////////////////  
+      output_low(PIN_C6);
+      delay_ms(100);
+      output_high(PIN_C6);
+      delay_ms(4000);
+      printf("AT+CIPSTART=%cTCP%c,%capi.thingspeak.com%c,80\r\n",comillas,comillas,comillas,comillas);
+      delay_ms(4000);
+      printf("AT+CIPMODE=1\r\n");
+      delay_ms(4000);
+      printf("AT+CIPSEND\r\n");
+      delay_ms(5000);
+      output_high(PIN_C6);
+      printf("GET https://api.thingspeak.com/update?api_key=S0Q18RYEFRGYNGMG&field1=%u&field2=%u&field3=%u\r\n",Humss,Tempss,Presss);
+      output_high(PIN_C6);
+      delay_ms(3000);
+      output_low(PIN_C6);
+      delay_ms(3000);
+      output_high(PIN_C6);
+      delay_ms(3000);
+      printf("AT+GSLP=1\r\n");
+      delay_ms(3000);
+////////////////////////////////////////////////////////////////////////////////////////      
+      mytime = RTC_Get();
+      y=(mytime->minutes)+10;
+      printf("%u %u %u %u",y,mytime->minutes,x,z);
+      if(y>=60){
+          y=y-60;
+          z=1;
+       }
+      while(x==0){
+         mytime = RTC_Get();
+         delay_ms(10000);
+         if(z==1 && (y>=mytime->minutes)){
+            x=1;
+         }
+         if(z==0 && (y<=mytime->minutes)){
+            x=1;
+         }
+         printf("%u %u %u %u",y,mytime->minutes,x,z);
+      }
+   }
+}

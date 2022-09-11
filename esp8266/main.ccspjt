@@ -1,0 +1,58 @@
+[PROJECT]
+Target=main.hex
+Processor_Text=PIC18F2550
+CCSVerions=5.059
+Compiler=PCH
+CCSVersion=5.059
+[Target Data]
+FileList=main.c
+[Directories]
+Include=
+[E:\Trabajos U\ELECTIVA INSTRUMENTACION\esp8266\cod\main]
+Type=4
+[mru-list]
+1=main.c
+
+[ProjectLog]
+Days=2
+D1=15-02-2020
+D1_L=14
+D1_L1=[25910]Project Opened.
+D1_L2=[26040]Started Editing.
+D1_L3=[27973]Project Opened.
+D1_L4=[27978]Started Editing.
+D1_L5=[28847]Stopped Editing.
+D1_L6=[29073]Started Editing.
+D1_L7=[29670]Stopped Editing.
+D1_L8=[29759]Started Editing.
+D1_L9=[30582]Stopped Editing.
+D1_L10=[30736]Started Editing.
+D1_L11=[34519]Stopped Editing.
+D1_L12=[35411]Started Editing.
+D1_L13=[36062]Stopped Editing.
+TotalEdit=88
+TotalDebug=0
+D1_E=88
+D1_D=0
+D1_L14=[36247]Project Closed.
+D2=16-02-2020
+D2_L=4
+D2_L1=[5955]Project Opened.
+D2_L2=[6152]Started Editing.
+D2_L3=[6452]Stopped Editing.
+D2_L4=[7899]Project Closed.
+
+[Opened Files]
+1=main.c
+t1=1
+2=main.h
+t2=1
+Count=2
+[main.c]
+Type=4
+
+[defines]
+buildcount=47
+[Units]
+Count=1
+1=main (main)

@@ -1,0 +1,133 @@
+[PROJECT]
+Target=main.hex
+Processor_Text=PIC18F2550
+CCSVerions=5.059
+Compiler=PCH
+CCSVersion=5.059
+[Target Data]
+FileList=main.c
+[Directories]
+Include=
+[E:\Trabajos U\ELECTIVA INSTRUMENTACION\PROYECTO\TODO2\main]
+Type=4
+[mru-list]
+1=main.c
+
+[ProjectLog]
+Days=4
+D1=17-02-2020
+D1_L=55
+D1_L1=[3100]Project Opened.
+D1_L2=[3121]Started Editing.
+D1_L3=[5310]Stopped Editing.
+D1_L4=[6793]Project Opened.
+D1_L5=[6815]Started Editing.
+D1_L6=[8972]Stopped Editing.
+D1_L7=[9101]Started Editing.
+D1_L8=[9473]Stopped Editing.
+D1_L9=[9522]Started Editing.
+D1_L10=[9825]Stopped Editing.
+D1_L11=[9832]Started Editing.
+D1_L12=[10676]Stopped Editing.
+TotalEdit=431
+TotalDebug=0
+D1_E=417
+D1_D=0
+D1_L13=[11036]Project Closed.
+D1_L14=[11060]Project Opened.
+D1_L15=[11078]Project Closed.
+D1_L16=[11788]Project Opened.
+D1_L17=[11819]Project Closed.
+D1_L18=[12169]Project Opened.
+D1_L19=[12195]Started Editing.
+D1_L20=[12600]Stopped Editing.
+D1_L21=[12675]Started Editing.
+D1_L22=[12975]Stopped Editing.
+D1_L23=[13030]Started Editing.
+D1_L24=[13794]Stopped Editing.
+D1_L25=[13794]Project Closed.
+D1_L26=[14809]Project Opened.
+D1_L27=[14839]Started Editing.
+D1_L28=[31955]Stopped Editing.
+D1_L29=[32903]Started Editing.
+D1_L30=[33335]Stopped Editing.
+D1_L31=[33425]Started Editing.
+D1_L32=[33725]Stopped Editing.
+D1_L33=[34050]Started Editing.
+D1_L34=[35896]Stopped Editing.
+D1_L35=[35896]Project Closed.
+D1_L36=[35913]Project Opened.
+D1_L37=[35932]Started Editing.
+D1_L38=[36886]Stopped Editing.
+D1_L39=[37254]Project Closed.
+D1_L40=[41268]Project Opened.
+D1_L41=[41295]Started Editing.
+D1_L42=[42285]Stopped Editing.
+D1_L43=[42336]Started Editing.
+D1_L44=[44103]Stopped Editing.
+D1_L45=[44629]Started Editing.
+D1_L46=[44929]Stopped Editing.
+D1_L47=[45299]Started Editing.
+D1_L48=[45600]Stopped Editing.
+D1_L49=[46042]Started Editing.
+D1_L50=[46373]Stopped Editing.
+D1_L51=[49544]Started Editing.
+D1_L52=[49878]Stopped Editing.
+D1_L53=[50155]Started Editing.
+D1_L54=[50642]Stopped Editing.
+D1_L55=[50642]Project Closed.
+D2=18-02-2020
+D2_L=6
+D2_L1=[44502]Project Opened.
+D2_L2=[48037]Started Editing.
+D2_L3=[48498]Stopped Editing.
+D2_L4=[49672]Started Editing.
+D2_L5=[49972]Stopped Editing.
+D2_E=3
+D2_D=0
+D2_L6=[50350]Project Closed.
+D3=19-02-2020
+D3_L=10
+D3_L1=[27824]Project Opened.
+D3_L2=[32529]Project Closed.
+D3_L3=[32788]Project Opened.
+D3_L4=[32825]Started Editing.
+D3_L5=[33146]Stopped Editing.
+D3_E=11
+D3_D=0
+D3_L6=[33146]Project Closed.
+D3_L7=[44697]Project Opened.
+D3_L8=[47947]Started Editing.
+D3_L9=[48530]Stopped Editing.
+D3_L10=[50999]Project Closed.
+D4=27-02-2020
+D4_L=6
+D4_L1=[65465]Project Opened.
+D4_L2=[65546]Project Closed.
+D4_L3=[65725]Project Opened.
+D4_L4=[65734]Project Closed.
+D4_L5=[69415]Project Opened.
+D4_L6=[69427]Project Closed.
+
+[Opened Files]
+1=main.c
+t1=18
+Count=1
+2=ads1115.c
+t2=28
+3=C:\Program Files (x86)\PICC\Devices\18F2550.h
+t3=35
+4=C:\Program Files (x86)\PICC\Drivers\fat_m.c
+t4=604
+5=C:\Program Files (x86)\PICC\Drivers\fat_m.c
+t5=3288
+6=DHT22.c
+t6=27
+[main.c]
+Type=4
+
+[defines]
+buildcount=111
+[Units]
+Count=1
+1=main (main)

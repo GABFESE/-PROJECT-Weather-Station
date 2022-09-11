@@ -1,0 +1,90 @@
+000     @SCRATCH
+001     @SCRATCH
+001     _RETURN_
+002     @SCRATCH
+003     @SCRATCH
+004     a
+005     b
+006-007 @sprintf_string
+008     @PSTRINGCN_614.P1
+008     @PRINTF_U_614.P2
+008     main.@SCRATCH1
+008     @PSTRINGC_614.@SCRATCH1
+009     @PRINTF_U_614.P1
+009     @delay_ms1.P2
+009     @PSTRINGC_614.@SCRATCH2
+009     @PSTRINGCN_614.@SCRATCH1
+00A     @DIV88.P1
+00A     @PSTRINGCN_614.@SCRATCH2
+00B     @PUTCHAR_1_.P1
+00B     @DIV88.P2
+00C     @DIV88.@SCRATCH1
+FB4.6   C1OUT
+FB4.7   C2OUT
+FBB     CCP_2_LOW
+FBB     CCP_2
+FBC     CCP_2_HIGH
+FBE     CCP_1
+FBE     CCP_1_LOW
+FBF     CCP_1_HIGH
+FE1-FE2 @WRITE_PACKED_MEMORY.P1
+FE1-FE2 @READ_PACKED_MEMORY.P2
+FE9-FEA @READ_PROGRAM_MEMORY.P1
+FE9-FEA @WRITE_PACKED_MEMORY.P2
+FE9-FEA @WRITE_PROGRAM_MEMORY.P3
+FE9-FEA @READ_PACKED_MEMORY.P4
+FF6-FF8 @WRITE_PROGRAM_MEMORY.P1
+FF6-FF8 @READ_PROGRAM_MEMORY.P2
+
+ROM Allocation:
+000004  @const624.call
+00000A  @const629.call
+00003A  @const632.call
+00004A  @const633.call
+000058  @const634.call
+0000AE  @PUTCHAR_1_
+0000EC  @PSTRINGC_614
+00010C  @delay_ms1
+000132  @PSTRINGCN_614
+000150  @DIV88
+000178  @PRINTF_U_614
+0001DE  main
+0001DE  @cinit1
+000200  @cinit2
+
+Project Directory:
+    E:\Trabajos U\ELECTIVA INSTRUMENTACION\PROYECTO\esp8266\cod\
+
+Project Files:
+    main.c                                                  [16-feb.-20 01:42  CRC=C93B30FB]
+    main.h                                                  [15-feb.-20 09:07  CRC=00000000]
+    C:\Program Files (x86)\PICC\Devices\18F2550.h           [02-feb.-20 10:26  CRC=634C93A3]
+
+Source signature=8FD45841
+Program memory checksum=0000
+Program memory CRC=0000
+Hex file CRC=C850
+
+Units:
+    main (main)
+
+Compiler Settings:
+    Processor:      PIC18F2550
+    Pointer Size:   16
+    ADC Range:      0-255
+    Opt Level:      9
+    Short,Int,Long: UNSIGNED: 1,8,16
+    Float,Double:   32,32
+    Compile Mode:       CCS5
+
+Output Files:
+    XREF file:   main.xsym
+    Errors:      main.err
+    Ext Symbols: main.esym
+    INHX32:      main.hex
+    Symbols:     main.sym
+    List:        main.lst
+    Debug/COFF:  main.cof
+    Project:     main.ccspjt
+    Call Tree:   main.tre
+    Statistics:  main.STA

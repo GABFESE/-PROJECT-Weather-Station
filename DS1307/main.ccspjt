@@ -1,0 +1,63 @@
+[PROJECT]
+Target=main.hex
+Processor_Text=PIC18F2550
+CCSVerions=5.059
+Compiler=PCH
+CCSVersion=5.059
+[Target Data]
+FileList=main.c
+[Directories]
+Include=
+[E:\Trabajos U\ELECTIVA INSTRUMENTACION\PROYECTO\DS1307\main]
+Type=4
+[mru-list]
+1=main.c
+
+[ProjectLog]
+Days=3
+D1=16-02-2020
+D1_L=8
+D1_L1=[73780]Project Opened.
+D1_L2=[73788]Started Editing.
+D1_L3=[76106]Stopped Editing.
+D1_L4=[76882]Project Closed.
+D1_L5=[77493]Project Opened.
+D1_L6=[77532]Started Editing.
+D1_L7=[77835]Stopped Editing.
+D1_L8=[80279]Project Closed.
+D2=17-02-2020
+D2_L=8
+D2_L1=[11089]Project Opened.
+D2_L2=[11097]Started Editing.
+D2_L3=[11743]Stopped Editing.
+TotalEdit=12
+TotalDebug=0
+D2_E=12
+D2_D=0
+D2_L4=[11743]Project Closed.
+D2_L5=[11838]Project Opened.
+D2_L6=[12101]Started Editing.
+D2_L7=[12155]Stopped Editing.
+D2_L8=[12155]Project Closed.
+D3=19-02-2020
+D3_L=3
+D3_L1=[32574]Project Opened.
+D3_L2=[32628]Started Editing.
+D3_L3=[32774]Project Closed.
+
+[Opened Files]
+1=main.c
+t1=8
+Count=1
+2=C:\Program Files (x86)\PICC\Drivers\DS1307.c
+t2=89
+3=C:\Program Files (x86)\PICC\Drivers\DS1307.c
+t3=1
+[main.c]
+Type=4
+
+[defines]
+buildcount=32
+[Units]
+Count=1
+1=main (main)

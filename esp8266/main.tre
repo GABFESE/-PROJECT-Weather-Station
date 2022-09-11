@@ -1,0 +1,41 @@
+юдmain
+   юдmain  0/290  Ram=1
+      цд@cinit1  (Inline)  Ram=0
+      цд@PSTRINGC_614  0/32  Ram=2
+      Ё  юд@PUTCHAR_1_  0/62  Ram=1
+      цд@delay_ms1  0/38  Ram=1
+      цд@PSTRINGCN_614  0/30  Ram=3
+      Ё  юд@PUTCHAR_1_  0/62  Ram=1
+      цд@PUTCHAR_1_  0/62  Ram=1
+      цд@PSTRINGCN_614  0/30  Ram=3
+      Ё  юд*
+      цд@PUTCHAR_1_  0/62  Ram=1
+      цд@PUTCHAR_1_  0/62  Ram=1
+      цд@PUTCHAR_1_  0/62  Ram=1
+      цд@PSTRINGCN_614  0/30  Ram=3
+      Ё  юд*
+      цд@PUTCHAR_1_  0/62  Ram=1
+      цд@PSTRINGCN_614  0/30  Ram=3
+      Ё  юд*
+      цд@delay_ms1  0/38  Ram=1
+      цд@PSTRINGC_614  0/32  Ram=2
+      Ё  юд*
+      цд@delay_ms1  0/38  Ram=1
+      цд@PSTRINGC_614  0/32  Ram=2
+      Ё  юд*
+      цд@delay_ms1  0/38  Ram=1
+      цд@PSTRINGCN_614  0/30  Ram=3
+      Ё  юд*
+      цд@PRINTF_U_614  0/102  Ram=2
+      Ё  цд@DIV88  0/40  Ram=3
+      Ё  цд@PUTCHAR_1_  0/62  Ram=1
+      Ё  цд@DIV88  0/40  Ram=3
+      Ё  цд@PUTCHAR_1_  0/62  Ram=1
+      Ё  юд@PUTCHAR_1_  0/62  Ram=1
+      цд@PSTRINGCN_614  0/30  Ram=3
+      Ё  юд*
+      цд@PRINTF_U_614  0/102  Ram=2
+      Ё  юд*
+      цд@PUTCHAR_1_  0/62  Ram=1
+      цд@PUTCHAR_1_  0/62  Ram=1
+      юд@delay_ms1  0/38  Ram=1

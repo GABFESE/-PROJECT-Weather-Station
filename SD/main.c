@@ -1,0 +1,20 @@
+#include <main.h>
+#include <SD.c>
+int z=0;
+
+void main(){
+   delay_ms(100);
+   initialize();
+   delay_ms(100);
+   create_doc();
+   while(TRUE){
+      open_doc();
+      write_docu(z);
+      enter();
+      close_doc();
+      read_doc();
+      z++;
+      delay_ms(1000);
+   }
+
+}

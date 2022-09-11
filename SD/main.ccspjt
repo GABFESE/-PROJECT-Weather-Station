@@ -1,0 +1,52 @@
+[PROJECT]
+Target=main.hex
+Processor_Text=PIC18F2550
+CCSVerions=5.059
+Compiler=PCH
+CCSVersion=5.059
+[Target Data]
+FileList=main.c
+[Directories]
+Include=
+[E:\Trabajos U\ELECTIVA INSTRUMENTACION\PROYECTO\SD\main]
+Type=4
+[mru-list]
+1=main.c
+
+[ProjectLog]
+Days=2
+D1=16-02-2020
+D1_L=7
+D1_L1=[2641]Project Opened.
+D1_L2=[2652]Started Editing.
+D1_L3=[3381]Stopped Editing.
+D1_L4=[5935]Project Closed.
+D1_L5=[85919]Project Opened.
+D1_L6=[85931]Started Editing.
+D1_L7=[86235]Stopped Editing.
+D2=17-02-2020
+D2_L=3
+D2_L1=[102]Started Editing.
+D2_L2=[722]Stopped Editing.
+TotalEdit=11
+TotalDebug=0
+D2_E=11
+D2_D=0
+D2_L3=[722]Project Closed.
+
+[Opened Files]
+1=main.c
+t1=1
+2=main.h
+t2=1
+Count=3
+3=SD.c
+t3=7
+[main.c]
+Type=4
+
+[defines]
+buildcount=13
+[Units]
+Count=1
+1=main (main)

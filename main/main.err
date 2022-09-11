@@ -1,0 +1,40 @@
+>>> Warning 240 "C:\Program Files (x86)\PICC\Drivers\fat_m.c" Line 622(84,85): Pointer types do not match
+>>> Warning 240 "C:\Program Files (x86)\PICC\Drivers\fat_m.c" Line 623(60,73): Pointer types do not match
+>>> Warning 240 "C:\Program Files (x86)\PICC\Drivers\fat_m.c" Line 637(88,89): Pointer types do not match
+>>> Warning 240 "C:\Program Files (x86)\PICC\Drivers\fat_m.c" Line 638(64,77): Pointer types do not match
+>>> Warning 240 "C:\Program Files (x86)\PICC\Drivers\fat_m.c" Line 2106(41,48): Pointer types do not match
+>>> Warning 240 "C:\Program Files (x86)\PICC\Drivers\fat_m.c" Line 2107(59,60): Pointer types do not match
+>>> Warning 240 "C:\Program Files (x86)\PICC\Drivers\fat_m.c" Line 2113(41,45): Pointer types do not match
+>>> Warning 240 "C:\Program Files (x86)\PICC\Drivers\fat_m.c" Line 2171(41,48): Pointer types do not match
+>>> Warning 240 "C:\Program Files (x86)\PICC\Drivers\fat_m.c" Line 2172(59,60): Pointer types do not match
+>>> Warning 240 "C:\Program Files (x86)\PICC\Drivers\fat_m.c" Line 2178(41,45): Pointer types do not match
+>>> Warning 240 "C:\Program Files (x86)\PICC\Drivers\fat_m.c" Line 2438(56,60): Pointer types do not match
+>>> Warning 240 "C:\Program Files (x86)\PICC\Drivers\fat_m.c" Line 2616(37,49): Pointer types do not match
+>>> Warning 240 "C:\Program Files (x86)\PICC\Drivers\fat_m.c" Line 2617(37,50): Pointer types do not match
+>>> Warning 240 "C:\Program Files (x86)\PICC\Drivers\fat_m.c" Line 2624(44,60): Pointer types do not match
+>>> Warning 240 "C:\Program Files (x86)\PICC\Drivers\fat_m.c" Line 2626(44,60): Pointer types do not match
+>>> Warning 240 "C:\Program Files (x86)\PICC\Drivers\fat_m.c" Line 2631(44,57): Pointer types do not match
+>>> Warning 240 "C:\Program Files (x86)\PICC\Drivers\fat_m.c" Line 2633(44,59): Pointer types do not match
+>>> Warning 240 "C:\Program Files (x86)\PICC\Drivers\fat_m.c" Line 2637(44,58): Pointer types do not match
+>>> Warning 240 "C:\Program Files (x86)\PICC\Drivers\fat_m.c" Line 2638(44,57): Pointer types do not match
+>>> Warning 240 "C:\Program Files (x86)\PICC\Drivers\fat_m.c" Line 2642(47,62): Pointer types do not match
+>>> Warning 240 "C:\Program Files (x86)\PICC\Drivers\fat_m.c" Line 2688(58,68): Pointer types do not match
+>>> Warning 240 "C:\Program Files (x86)\PICC\Drivers\fat_m.c" Line 2724(62,76): Pointer types do not match
+>>> Warning 240 "C:\Program Files (x86)\PICC\Drivers\fat_m.c" Line 3066(35,36): Pointer types do not match
+>>> Warning 240 "C:\Program Files (x86)\PICC\Drivers\fat_m.c" Line 3119(35,36): Pointer types do not match
+>>> Warning 240 "C:\Program Files (x86)\PICC\Drivers\fat_m.c" Line 3274(57,60): Pointer types do not match
+>>> Warning 240 "C:\Program Files (x86)\PICC\Drivers\fat_m.c" Line 3279(57,60): Pointer types do not match
+>>> Warning 240 "C:\Program Files (x86)\PICC\Drivers\fat_m.c" Line 3284(57,60): Pointer types do not match
+>>> Warning 240 "C:\Program Files (x86)\PICC\Drivers\fat_m.c" Line 3289(57,60): Pointer types do not match
+>>> Warning 240 "C:\Program Files (x86)\PICC\Drivers\fat_m.c" Line 3294(57,60): Pointer types do not match
+>>> Warning 240 "C:\Program Files (x86)\PICC\Drivers\fat_m.c" Line 3298(71,72): Pointer types do not match
+>>> Warning 240 "C:\Program Files (x86)\PICC\Drivers\fat_m.c" Line 3299(57,60): Pointer types do not match
+>>> Warning 240 "C:\Program Files (x86)\PICC\Drivers\fat_m.c" Line 3307(57,60): Pointer types do not match
+>>> Warning 203 "E:\Trabajos U\ELECTIVA INSTRUMENTACION\PROYECTO\TODO2\SD.c" Line 17(1,1): Condition always TRUE
+>>> Warning 203 "main.c" Line 26(1,1): Condition always TRUE
+>>> Warning 205 "main.c" Line 55(1,1): Unsigned variable is never less than zero
+>>> Warning 204 "main.c" Line 55(1,1): Condition always FALSE
+>>> Warning 202 "main.c" Line 11(7,18): Variable never used:   Temperatura
+      Memory usage:   ROM=80%      RAM=40% - 55%
+      0 Errors,  37 Warnings.
+Build Successful.

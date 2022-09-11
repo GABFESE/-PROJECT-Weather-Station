@@ -1,0 +1,13 @@
+#include <main.h>
+#include <BMP085V2.c>
+
+void main(){
+   inicializa_BMP085();
+   while(true){
+      a=LeeTemperatura_BMP085(DescargaTemp_BMP085());
+      b=LeePresion_BMP085(DescargaPres_BMP085());
+      printf("T[c]: %.1g  \n\r",a);
+      printf("P[mBar]: %0.2g  \n",b);
+      delay_ms(500);
+   }
+}

@@ -1,0 +1,21 @@
+#include <main.h>
+int a=0,b=0;
+const int8 comillas = '"';
+char caracter;
+
+int valor;
+#int_RDA
+RDA_isr(){
+   valor=GETC();
+   printf("obtenido %c",valor);
+}
+
+void main(){
+   enable_interrupts(INT_RDA);
+   enable_interrupts(GLOBAL);
+   while(1){
+      valor=GETC();
+      printf("obtenido %c",valor);
+      delay_ms(10);
+   }
+}

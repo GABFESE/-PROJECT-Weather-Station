@@ -1,0 +1,226 @@
+000     @SCRATCH
+001     @SCRATCH
+001     _RETURN_
+002     @SCRATCH
+003     @SCRATCH
+004-005 ac1
+006-007 ac2
+008-009 ac3
+00A-00B ac4
+00C-00D ac5
+00E-00F ac6
+010-011 b1
+012-013 b2
+014-015 mb
+016-017 mc
+018-019 md
+01A-01D _c3
+01E-021 _c4
+022-025 _b1
+026-029 _c5
+02A-02D _c6
+02E-031 _mc
+032-035 _md
+036-039 _x0
+03A-03D _x1
+03E-041 _x2
+042-045 _y0
+046-049 _y1
+04A-04D _y2
+04E-051 _p0
+052-055 _p1
+056-059 _p2
+05A-05D _s
+05E-061 _Temp
+062-065 a
+066-069 b
+06A-06D c
+06E-071 d
+072-075 atan2.y
+072-073 @SITOF.P1
+072     @PSTRINGCN_618.P2
+072-075 @PRINTF_L32D_618FPFPFR.P3
+072     BMP085Pressure.getTemp
+072     bmp085Calibration.@SCRATCH1
+072     BMP085Temperature.@SCRATCH1
+072     main.@SCRATCH1
+073-076 @DTOF.P1
+073     BMP085ReadUP.msb
+073-074 BMP085ReadUT.ut
+073     bmp085Calibration.@SCRATCH2
+073     BMP085Pressure.@SCRATCH1
+073     BMP085Temperature.@SCRATCH2
+073     @PSTRINGCN_618.@SCRATCH1
+074     BMP085ReadUP.lsb
+074     bmp085Calibration.@SCRATCH3
+074     BMP085Pressure.@SCRATCH2
+074     BMP085Temperature.@SCRATCH3
+074     @PSTRINGCN_618.@SCRATCH2
+075     BMP085ReadUP.xlsb
+075     BMP085ReadInt.address
+075-078 @SFTOI.P1
+075     bmp085Calibration.@SCRATCH4
+075     BMP085Pressure.@SCRATCH3
+075     BMP085Temperature.@SCRATCH4
+076     BMP085ReadInt.msb
+076     @PRINTF_L32D_618FPFPFR.P1
+076-079 atan2.x
+076-079 BMP085ReadUP.P
+076     BMP085Pressure.@SCRATCH4
+077     BMP085ReadInt.lsb
+077-07A BMP085GetPressure._pu
+077-07A BMP085GetTemp._tu
+077     @PRINTF_L32D_618FPFPFR.@SCRATCH1
+078-079 BMP085ReadInt.temp
+078     @PRINTF_L32D_618FPFPFR.@SCRATCH2
+079     @PRINTF_L32D_618FPFPFR.@SCRATCH3
+07A     BMP085ReadByte.address
+07A     @delay_ms1.P1
+07A     BMP085WriteByte.address
+07A-07B @ITOF.P1
+07A-07D atan2.z
+07A     BMP085ReadUP.@SCRATCH1
+07A     @PRINTF_L32D_618FPFPFR.@SCRATCH4
+07B-07E BMP085GetPressure.x
+07B     BMP085ReadByte.data
+07B     BMP085WriteByte.data
+07B-07E BMP085GetTemp.alpha
+07B     BMP085ReadUP.@SCRATCH2
+07B     @PRINTF_L32D_618FPFPFR.@SCRATCH5
+07C     @I2C_WRITE_1.P1
+07C     @I2C_READ_1.P2
+07C     @PRINTF_L32D_618FPFPFR.@SCRATCH6
+07D     @I2C_READ_1.@SCRATCH1
+07D     @PRINTF_L32D_618FPFPFR.@SCRATCH7
+07E.0   atan2.sign
+07E     @I2C_READ_1.@SCRATCH2
+07E     @PRINTF_L32D_618FPFPFR.@SCRATCH8
+07F-082 BMP085GetPressure.y
+07F-082 @DIV3232.P1
+07F     @PUTCHAR_1_.P2
+07F-082 @FTOSD.P3
+07F-082 BMP085GetTemp.T
+07F     atan2.quad
+083-086 BMP085GetPressure.z
+083-086 @DIV3232.P1
+083     @FTOSD.@SCRATCH1
+087-08A BMP085GetPressure.P
+087     @DIV3232.@SCRATCH1
+088     @DIV3232.@SCRATCH2
+089     @DIV3232.@SCRATCH3
+08A     @DIV3232.@SCRATCH4
+08B     BMP085GetPressure.@SCRATCH1
+08B     @DIV3232.@SCRATCH5
+08C     BMP085GetPressure.@SCRATCH2
+08D     BMP085GetPressure.@SCRATCH3
+08E     BMP085GetPressure.@SCRATCH4
+08F-092 @MULFF.P1
+08F-092 @ADDFF.P2
+08F-092 @DIVFF.P3
+093-096 @DIVFF.P1
+093-096 @ADDFF.P2
+093-096 @MULFF.P3
+097     @MULFF.@SCRATCH1
+097     @ADDFF.@SCRATCH1
+097     @DIVFF.@SCRATCH1
+098     @MULFF.@SCRATCH2
+098     @ADDFF.@SCRATCH2
+098     @DIVFF.@SCRATCH2
+099     @MULFF.@SCRATCH3
+099     @ADDFF.@SCRATCH3
+099     @DIVFF.@SCRATCH3
+09A     @ADDFF.@SCRATCH4
+09A     @DIVFF.@SCRATCH4
+09B     @ADDFF.@SCRATCH5
+09B     @DIVFF.@SCRATCH5
+09C     @ADDFF.@SCRATCH6
+09C     @DIVFF.@SCRATCH6
+09D     @ADDFF.@SCRATCH7
+09E     @ADDFF.@SCRATCH8
+FB4.6   C1OUT
+FB4.7   C2OUT
+FBB     CCP_2
+FBB     CCP_2_LOW
+FBC     CCP_2_HIGH
+FBE     CCP_1
+FBE     CCP_1_LOW
+FBF     CCP_1_HIGH
+FE1-FE2 @READ_PACKED_MEMORY.P1
+FE1-FE2 @WRITE_PACKED_MEMORY.P2
+FE9-FEA @READ_PROGRAM_MEMORY.P1
+FE9-FEA @READ_PACKED_MEMORY.P2
+FE9-FEA @WRITE_PROGRAM_MEMORY.P3
+FE9-FEA @WRITE_PACKED_MEMORY.P4
+FF6-FF8 @WRITE_PROGRAM_MEMORY.P1
+FF6-FF8 @READ_PROGRAM_MEMORY.P2
+
+ROM Allocation:
+000004  @const837.call
+000014  @const846.call
+000026  @I2C_WRITE_1
+00006E  @I2C_READ_1
+0000B6  BMP085ReadInt
+000128  @SITOF
+000170  @MULFF
+000262  @ITOF
+000298  @DIVFF
+0003F2  bmp085Calibration
+00075E  BMP085WriteByte
+000798  @delay_ms1
+0007BE  @SFTOI
+0007F8  BMP085ReadUT
+000836  @ADDFF
+000AA0  BMP085GetTemp
+000BB6  BMP085ReadByte
+000C1A  @FTOSD
+000C58  BMP085ReadUP
+000CD0  @DTOF
+000D06  BMP085GetPressure
+001092  BMP085Pressure
+001112  BMP085Temperature
+001168  @PUTCHAR_1_
+0011A6  @PSTRINGCN_618
+0011C4  @DIV3232
+001252  @PRINTF_L32D_618FPFPFR
+00140E  main
+00140E  @cinit1
+001428  @cinit2
+
+Project Directory:
+    E:\Trabajos U\ELECTIVA INSTRUMENTACION\PROYECTO\BPM180\
+
+Project Files:
+    main.c                                                  [15-feb.-20 13:39  CRC=1A2B222B]
+    main.h                                                  [15-feb.-20 11:59  CRC=D872A938]
+    C:\Program Files (x86)\PICC\Devices\18F2550.h           [02-feb.-20 10:26  CRC=634C93A3]
+    BMP085.c                                                [15-feb.-20 10:49  CRC=7692DE04]
+    C:\Program Files (x86)\PICC\Drivers\math.h              [16-ene.-15 11:40  CRC=6A8358B0]
+
+Source signature=A183EE6A
+Program memory checksum=0000
+Program memory CRC=0000
+Hex file CRC=8134
+
+Units:
+    main (main)
+
+Compiler Settings:
+    Processor:      PIC18F2550
+    Pointer Size:   16
+    ADC Range:      0-1023
+    Opt Level:      9
+    Short,Int,Long: UNSIGNED: 1,8,16
+    Float,Double:   32,32
+    Compile Mode:       CCS5
+
+Output Files:
+    XREF file:   main.xsym
+    Errors:      main.err
+    Ext Symbols: main.esym
+    INHX32:      main.hex
+    Symbols:     main.sym
+    List:        main.lst
+    Debug/COFF:  main.cof
+    Project:     main.ccspjt
+    Call Tree:   main.tre
+    Statistics:  main.STA

@@ -1,0 +1,63 @@
+
+ROM used:   2292/32768 (7%)
+            2292/32768 (7%) including unused fragments
+
+            2.6 Average locations per line
+            26.3 Average locations per statement
+
+RAM used:   33/2048 (2%) at main() level
+            58/2048 (3%) worst case
+
+Stack used: 3 worst case (3 in main + 0 for interrupts)
+Stack size: 31
+
+Lines Stmts  %   Files
+----- ----- ---  -----
+   17     8   9  main.c
+    5     0   0  main.h
+  779     0   0  C:\Program Files (x86)\PICC\Devices\18F2550.h
+   96    79  91  DHT22.c
+----- -----
+  897    87 Total
+
+Page ROM  %  RAM    Vol Diff  Functions:
+---- --- --- ---    --- ----  ----------
+0     38   1    1             @delay_ms1
+0     62   1    1             @PUTCHAR_1_
+0     28   1    0    106  1.3  Start_signal
+0     42   1    0    127  2.5  check_response
+0    144   3    4    705  7.7  Read_Data
+0    382   8    3   1080  7.7  dat_DHT22
+0     12   0    0             @const635
+0     32   1    2    230  3.9  @PSTRINGC_614
+0     82   2    6             @MULS1616
+0     54   1    2             @ITOF
+0    346   8   14    310  2.7  @DIVFF
+0     18   0    0    310  2.7  @const648
+0     30   1    0    310  2.7  @const649
+0    192   4    1    179  2.5  main
+0    244   5   11             @MULFF
+0     64   1    5             @FTOSD
+0    142   3   13             @DIV3232
+0    376   8   13             @PRINTF_L32D_614FPFPF
+ Inline         0             @cinit1
+
+Program metrics:
+    Functions               9
+    Statements              87
+    Comments                158
+    Volume (V)              5148
+    Difficulty (D)          32.6
+    Effort to implement (E) 167927
+    Time to implement (T)   2 hours, 35 minutes
+    Est Delivered Bugs (B)  1
+    Cyclomatic Complexity   14
+    Maintainability (MI)    111
+
+ Segment     Used  Free
+-----------  ----  ----
+00000-00002     4  0  
+00004-07FFE  2288  30476  
+
+
+

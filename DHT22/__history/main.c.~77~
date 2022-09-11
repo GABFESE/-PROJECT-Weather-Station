@@ -1,0 +1,17 @@
+#include <main.h>
+#include <DHT22.c>
+
+char Temperatura,Humedad;
+
+void main(){
+delay_ms(1000);
+printf("\r\n");
+  while(TRUE){
+    Start_signal();
+    Temperatura=dat_DHT22(0);
+    printf("%s  ",Temperatura);
+    Start_signal();
+    Humedad=dat_DHT22(1);             
+    printf("%s\r\n",Humedad);
+  }
+}

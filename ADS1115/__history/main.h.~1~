@@ -1,0 +1,4 @@
+#include <18F2550.h>
+#device ADC=10
+#use delay(internal=8MHz)
+

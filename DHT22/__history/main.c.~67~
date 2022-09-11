@@ -1,0 +1,49 @@
+#include <main.h>
+#include <DHT22.c>
+
+void main(){
+delay_ms(1000);
+printf("\r\n");
+  while(TRUE){
+    delay_ms(1000);
+    Time_out = 0;
+    Start_signal();
+//!    if(check_response()){                     // If there is response from sensor
+//!      RH_byte1 = Read_Data();                 // read RH byte1
+//!      RH_byte2 = Read_Data();                 // read RH byte2
+//!      T_byte1 = Read_Data();                  // read T byte1
+//!      T_byte2 = Read_Data();                  // read T byte2
+//!      Checksum = Read_Data();                 // read checksum
+//!      if(Time_out){                           // If reading takes long time
+//!        printf("Time out!\r\n");
+//!      }
+//!      else{
+//!       if(CheckSum == ((RH_Byte1 + RH_Byte2 + T_Byte1 + T_Byte2) & 0xFF)){
+//!        RH = RH_byte1;
+//!        RH = (RH << 8) | RH_byte2;
+//!        Temp = T_byte1;
+//!        Temp = (Temp << 8) | T_byte2;
+//!        if (Temp > 0X8000){
+//!         message1[6] = '-';
+//!         Temp = Temp & 0X7FFF; }
+//!        else
+//!         message1[6] = ' ';
+//!        message1[7]  = (Temp / 100) % 10  + 48;
+//!        message1[8]  = (Temp / 10) % 10  + 48;
+//!        message1[10] = Temp % 10  + 48;
+//!        message2[7]  = (RH / 100) % 10 + 48;
+//!        message2[8]  = (RH / 10) % 10 + 48;
+//!        message2[10] = RH % 10 + 48;
+//!        printf("%s  ",message1);                   // Display message1
+//!        printf("%s\r\n",message2);                   // Display message2
+//!        }
+//!        else {
+//!          printf("Checksum Error!\r\n");
+//!        }
+//!      }
+//!    }
+//!    else {
+//!      printf("No response from the sensor\r\n");
+//!    }
+  }
+}

@@ -1,0 +1,12 @@
+>>> Warning 202 "main.c" Line 4(6,9): Variable never used:   txt
+>>> Warning 202 "main.c" Line 5(7,12): Variable never used:   avis0
+>>> Warning 202 "main.c" Line 5(13,18): Variable never used:   avis1
+>>> Warning 202 "main.c" Line 6(7,11): Variable never used:   corr
+>>> Warning 202 "main.c" Line 6(12,16): Variable never used:   mah1
+>>> Warning 202 "main.c" Line 6(17,21): Variable never used:   mah2
+>>> Warning 202 "main.c" Line 7(5,8): Variable never used:   hr2
+>>> Warning 202 "main.c" Line 7(10,14): Variable never used:   min2
+>>> Warning 202 "main.c" Line 7(16,20): Variable never used:   sec2
+      Memory usage:   ROM=7%      RAM=7% - 8%
+      0 Errors,  9 Warnings.
+Build Successful.

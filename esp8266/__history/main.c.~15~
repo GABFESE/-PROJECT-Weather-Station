@@ -1,0 +1,21 @@
+#include <main.h>
+int a=0,b=0;
+const int8 comillas = '"';
+char caracter;
+
+char ch;
+#INT_RDA                            //SERVICIO DE INTERRUPCIÓN POR RS232
+void rda_isr(){
+ch = getchar();             //Lee dato recibido
+puts("Recibido");                      //Desplega recibido en el LCD
+printf("\n\r Valor %c",ch);
+}
+
+void main(){
+      enable_interrupts(INT_RDA);      //Habilita interrupción por recepción RS232
+      enable_interrupts(GLOBAL);
+      delay_ms(1000);
+      while(1){
+//         printf("AT\r\n")
+      }
+}

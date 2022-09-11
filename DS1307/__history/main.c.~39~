@@ -1,0 +1,106 @@
+#include <main.h>
+#include <DS1307.c>
+
+// DS1307 library variable declaration
+RTC_Time *mytime;
+
+void rtc_print(){
+  printf("TIME: %02u:%02u:%02u", mytime->hours, mytime->minutes, mytime->seconds);
+  printf(" DATE: %02u/%02u/20%02u\r\n", mytime->day, mytime->month, mytime->year);
+}
+ 
+void main(){
+  delay_ms(1000);  // wait a second
+  mytime = RTC_Get();
+  rtc_print();
+  delay_ms(1000);  // wait a second
+ 
+  mytime->hours   = 03;
+  mytime->minutes = 10;
+  mytime->seconds = 00;
+  mytime->day   = 17;
+  mytime->month = 02;
+  mytime->year  = 20;
+   delay_ms(1000);
+  //RTC_Set(mytime);
+ 
+ OSC_Disable()
+  while(TRUE){
+    mytime = RTC_Get();
+    rtc_print();
+    delay_ms(30000);  // wait 100 ms
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//!int hr, min, sec, hr2, min2, sec2;
+//!
+//!int BCDaBIN(BYTE bcd){
+//!   int varia;
+//!   varia=bcd;
+//!   varia>>=1;
+//!   varia &= 0x78;
+//!   return (varia + (varia>>2) + (bcd & 0x0f));
+//!}
+//!
+//!void rtc_set_time(void) {
+//!   i2c_start(); //Escritura
+//!   i2c_write(0xD0); //Codigo de escritura
+//!   i2c_write(0x02); 
+//!   i2c_write(0x18); //HORAS
+//!   i2c_stop(); //Finaliza comunicación
+//!   
+//!   i2c_start(); //Escritura
+//!   i2c_write(0xD0); //Codigo de escritura
+//!   i2c_write(0x01); 
+//!   i2c_write(0x56); //MINUTOS
+//!   i2c_stop(); //Finaliza comunicación
+//!   
+//!   i2c_start(); //Escritura
+//!   i2c_write(0xD0); //Codigo de escritura
+//!   i2c_write(0x00); 
+//!   i2c_write(0x10); //SEGUNDOS
+//!   i2c_stop(); //Finaliza comunicación
+//!}
+//!
+//!void rtc_get_time(BYTE& hr, BYTE& min, BYTE& sec) {
+//!   i2c_start(); //Escritura
+//!   i2c_write(0xD0); //Codigo de escritura
+//!   i2c_write(0x00); //Puntero de la primera dirección
+//!   i2c_start(); //Lectura
+//!   i2c_write(0xD1); //Codigo de lectura
+//!   sec = BCDaBIN(i2c_read()&0x7f); //Lectura de los 7 bit de los segundos
+//!   min = BCDaBIN(i2c_read()&0x7f); //Lectura de los 7 bit de los minutos
+//!   hr = BCDaBIN(i2c_read(0)&0x3f); //Lectura de los 6 bit de las horas
+//!   i2c_stop(); //Finaliza comunicación
+//!}
+//!
+//!void main(){
+//!   rtc_set_time();
+//!   while(1){
+//!      rtc_get_time(hr,min,sec);
+//!      printf("H%2u:M%2u:S%2u\r\n",hr,min,sec);
+//!      delay_ms(600);
+//!   }
+//!}

@@ -1,0 +1,7 @@
+#include <main.h>
+const int8 comillas = '"';
+
+
+void main(){
+   printf("AT\r\n");
+}

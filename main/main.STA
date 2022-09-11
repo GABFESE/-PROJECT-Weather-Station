@@ -1,0 +1,218 @@
+
+ROM used:   26282/32768 (80%)
+            26282/32768 (80%) including unused fragments
+
+            2.9 Average locations per line
+            12.8 Average locations per statement
+
+RAM used:   827/2048 (40%) at main() level
+            1131/2048 (55%) worst case
+
+Stack used: 10 worst case (10 in main + 0 for interrupts)
+Stack size: 31
+
+Lines Stmts  %   Files
+----- ----- ---  -----
+  136   101   5  main.c
+   12     0   0  main.h
+  779     0   0  C:\Program Files (x86)\PICC\Devices\18F2550.h
+  138    53   3  SD.c
+  941   278  14  C:\Program Files (x86)\PICC\Drivers\mmcsd_m.c
+  168     0   0  C:\Program Files (x86)\PICC\Drivers\stdint.h
+ 3318   923  45  C:\Program Files (x86)\PICC\Drivers\fat_m.c
+   28     0   0  C:\Program Files (x86)\PICC\Drivers\ctype.h
+  431   129   6  C:\Program Files (x86)\PICC\Drivers\string.h
+   32     0   0  C:\Program Files (x86)\PICC\Drivers\stddef.h
+  230    63   3  C:\Program Files (x86)\PICC\Drivers\DS1307.c
+   96    79   4  DHT22.c
+  288    91   4  BMP085.c
+ 2227   257  13  C:\Program Files (x86)\PICC\Drivers\math.h
+   97    72   4  ads1115.c
+----- -----
+ 8921  2046 Total
+
+Page ROM  %  RAM    Vol Diff  Functions:
+---- --- --- ---    --- ----  ----------
+0     40   0    1             @delay_ms1
+0     76   0    3             @I2C_READ_1
+0     82   0    1             @I2C_WRITE_1
+0     68   0    1             @PUTCHAR_1_
+0     16   0    1     31  1.1  MMCSD_SPI_XFER
+0    440   1    6   2432  9.2  mmcsd_init
+0    136   0   17    268  5.3  mmcsd_read_data
+0    166   0   13    531  6.1  mmcsd_read_block
+0    134   0   16    273  5.3  mmcsd_write_data
+0    172   0   12    604  7.5  mmcsd_write_block
+0     22   0    0     48  1.6  mmcsd_go_idle_state
+0     26   0    0     48  1.6  mmcsd_send_op_cond
+0     38   0    2     64  2.1  mmcsd_send_if_cond
+0     34   0    4     53  1.7  mmcsd_set_blocklen
+0     34   0    4     53  1.7  mmcsd_read_single_block
+0     34   0    4     53  1.7  mmcsd_write_single_block
+0     28   0    0     48  1.6  mmcsd_sd_send_op_cond
+0     26   0    0     48  1.6  mmcsd_app_cmd
+0     34   0    2     64  2.1  mmcsd_read_ocr
+0     46   0    1     74  2.2  mmcsd_crc_on_off
+0    104   0   11    734  4.8  mmcsd_send_cmd
+0     46   0    2    178  4.2  mmcsd_get_r1
+0     16   0    2     35  1.7  mmcsd_get_r3
+0    114   0    5    210  4.3  mmcsd_get_r7
+0     30   0    2     96  3.2  mmcsd_wait_for_token
+0     84   0    8    585  6.7  mmcsd_crc7
+0      4   0    0     17  0.8  mmcsd_select
+0      4   0    0     18  0.6  mmcsd_deselect
+0     42   0    0     68  2.1  mmcsd_load_buffer
+0     56   0    0    106  2.6  mmcsd_flush_buffer
+0    172   0    9    398  5.5  mmcsd_move_buffer
+0     82   0   14    188  4.7  mmcsd_read_byte
+0     78   0   12    288  3.7  mmcsd_write_byte
+0    122   0    5    243  7.0  strcmp
+0     60   0    5    140  5.0  strlen
+0    624   1  102   2174 12.6  fatopen
+0    808   2   13   1500  8.4  fatclose
+0    736   1    9   1203  9.6  fatputc
+0     78   0    6    231  6.3  fatputs
+0   1018   2   28   1268 11.8  fatsetpos
+0    150   0   13             @DIV3232
+0     92   0   14             @MUL3232
+0    412   1   10    598  7.6  fatflush
+0    130   0    8     86  2.7  rewind
+0   1762   3   52   3322 11.5  set_file
+0    390   1   20   1139  9.9  get_file_name
+0    316   1   14    856  8.9  get_short_file_name
+0     34   0    1             @SPRINTF
+0    396   1   25    641  8.8  get_next_free_cluster
+0    100   0    8    181  5.2  get_next_entry
+0     98   0    8    181  5.2  get_prev_entry
+0    246   0   16    453  5.0  alloc_clusters
+0    172   0   13    301  5.5  dealloc_clusters
+0    186   0   47    428  6.6  clear_cluster
+0    124   0   13    144  5.1  write_fat
+0    350   1    9    404  7.5  write_buffer
+0    202   0    9             @PRINTF_LU_618
+0   1090   2   38   1994  8.4  fat_init
+0     36   0    5             @MUL1616
+0    136   0    7    136  4.0  get_next_cluster
+0    226   0   15    289  6.3  get_prev_cluster
+0    518   1   16    455  7.7  get_next_addr
+0    586   1   16    430  7.7  get_prev_addr
+0     94   0    8     60  2.3  cluster_to_addr
+0    122   0    8     59  2.6  addr_to_cluster
+0     10   0    0             @const1238
+0     40   0    3             @PSTRINGCN_618
+0     38   0    2             @PSTRINGR_618
+0     14   0    0             @const1246
+0     32   0    2             @PSTRINGC_618
+0     20   0    0             @const1256
+0     30   0    0             @const1257
+0     24   0    0             @const1258
+0     30   0    0             @const1259
+0     28   0    0             @const1260
+0      8   0    0             @const1264
+0      8   0    0             @const1265
+0     20   0    0             @const1266
+0     12   0    0             @const1267
+0     14   0    0             @const1269
+0     24   0    0             @const1271
+0     24   0    0             @const1272
+0     20   0    0             @const1273
+0    170   0    0    415  5.4  initialize
+0     32   0    0             @const1280
+0     34   0    0             @const1281
+0     30   0    0             @const1282
+0     12   0    0             @const1283
+0      8   0    0             @const1284
+0      8   0    0             @const1285
+0      8   0    0             @const1286
+0     30   0    0             @const1288
+0     28   0    0             @const1289
+0      6   0    0             @const1291
+0     24   0    0             @const1292
+0     36   0    0             @const1294
+0      6   0    0             @const1297
+0     26   0    0             @const1298
+0     86   0   19     83  2.8  open_doc
+0     24   0    0             @const1303
+0     44   0    3             @DIV88
+0    128   0    2             @PRINTF_U_1142
+0     20   0    0             @const1314
+0    246   0   11             @MULFF
+0     66   0    5             @FTOSD
+0    432   1   13             @PRINTF_L32D_1142FPFPF
+0     24   0    0             @const1327
+0     34   0    7     30  1.5  enter
+0     34   0    1     66  2.2  close_doc
+0     20   0    0             @const1332
+0     30   0    0             @const1334
+0      4   0    0             @const1338
+0     30   0    2     75  2.8  bcd_to_decimal
+0    232   0    1    929  3.9  RTC_Get
+0     32   0    0    106  1.3  start_signal
+0     42   0    0    127  2.5  check_response
+0    160   0    4    705  7.7  Read_Data
+0    440   1    3   1088  7.3  dat_DHT22
+0     12   0    0             @const1417
+0     86   0    6             @MULS1616
+0     54   0    2             @ITOF
+0    350   1   14             @DIVFF
+0     18   0    0             @const1426
+0     30   0    0             @const1427
+0     60   0    4             @SFTOI
+0    632   1   16             @ADDFF
+0     80   0    2             @SITOF
+0    112   0    2    186  2.8  BMP085ReadByte
+0    136   0    5    297  3.4  BMP085ReadInt
+0     68   0    2    102  1.8  BMP085WriteByte
+0    968   2    4   1028  3.0  bmp085Calibration
+0     78   0    2    117  2.6  BMP085ReadUT
+0    148   0    9    581  6.7  bmp085ReadUP
+0    282   1   12    194  4.7  BMP085GetTemp
+0    914   2   24    417  5.7  BMP085GetPressure
+0    124   0    4     61  2.1  BMP085Pressure
+0     58   0    4             @DTOF
+0     84   0    4     48  2.1  BMP085Temperature
+0    382   1    0    575  5.1  datov0
+0    382   1    0    575  5.1  datov1
+0    286   1    3    154  2.2  rtc_print
+0     22   0    0             @const1659
+0    124   0    2             @PRINTF_U_618
+0     26   0    0             @const1663
+0   2516   5    5   3955  8.9  main
+0     18   0    0             @const1667
+0    432   1   13             @PRINTF_L32D_618FPFPF
+0     36   0    0             @const1671
+0    506   1   13             @PRINTF_L32D_618FPFPFR
+0     18   0    0             @const1678
+0     52   0    0             @const1679
+0     40   0    3             @PSTRINGCN_1142
+0     20   0    0             @const1682
+0     14   0    0             @const1683
+0     20   0    0             @const1684
+0     48   0    0             @const1685
+0     16   0    0             @const1686
+0     14   0    0             @const1687
+0     64   0    0             @const1688
+0     44   0    0             @const1689
+0     12   0    0             @const1690
+0     12   0    0             @const1691
+ Inline         0             @cinit1
+
+Program metrics:
+    Functions               80
+    Statements              2046
+    Comments                2852
+    Volume (V)              73285
+    Difficulty (D)          384.9
+    Effort to implement (E) 28211013
+    Time to implement (T)   435 hours, 21 minutes
+    Est Delivered Bugs (B)  31
+    Cyclomatic Complexity   166
+    Maintainability (MI)    91
+
+ Segment     Used  Free
+-----------  ----  ----
+00000-00002     4  0  
+00004-07FFE  26278  6486  
+
+
+

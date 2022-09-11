@@ -1,0 +1,59 @@
+
+ROM used:   2182/32768 (7%)
+            2182/32768 (7%) including unused fragments
+
+            2.4 Average locations per line
+            26.9 Average locations per statement
+
+RAM used:   141/2048 (7%) at main() level
+            167/2048 (8%) worst case
+
+Stack used: 1 worst case (1 in main + 0 for interrupts)
+Stack size: 31
+
+Lines Stmts  %   Files
+----- ----- ---  -----
+   22     9  11  main.c
+    6     0   0  main.h
+  779     0   0  C:\Program Files (x86)\PICC\Devices\18F2550.h
+   97    72  89  ads1115.c
+----- -----
+  904    81 Total
+
+Page ROM  %  RAM    Vol Diff  Functions:
+---- --- --- ---    --- ----  ----------
+0     38   1    1             @delay_ms1
+0     64   1    1             @PUTCHAR_1_
+0     72   2    3             @I2C_READ_1
+0     72   2    1             @I2C_WRITE_1
+0    318   7    0    575  5.1  datov0
+0     54   1    2             @ITOF
+0    242   6   11             @MULFF
+0    318   7    0    575  5.1  datov1
+0    170   4    0    179  2.9  main
+0     58   1    4             @SFTOI
+0    188   4    9             @PRINTF_LU_613
+0     64   1    5             @FTOSD
+0    142   3   13             @DIV3232
+0    378   9   13             @PRINTF_L32D_613FPFPF
+ Inline         0             @cinit1
+
+Program metrics:
+    Functions               3
+    Statements              81
+    Comments                171
+    Volume (V)              1706
+    Difficulty (D)          12.0
+    Effort to implement (E) 20444
+    Time to implement (T)   19 minutes
+    Est Delivered Bugs (B)  0
+    Cyclomatic Complexity   2
+    Maintainability (MI)    46
+
+ Segment     Used  Free
+-----------  ----  ----
+00000-00002     4  0  
+00004-07FFE  2178  30586  
+
+
+

@@ -1,0 +1,17 @@
+#include <main.h>
+#include <DS1307.c>
+
+int sec=30,min=54,hora=4,dia=1, mes=8,anio=13,dow=0;
+char fecha[5];
+
+void main(){
+   ds1307_set_date_time(dia,mes,anio,dow,hora,min,sec);
+   for(;;){
+      ds1307_get_date(dia,mes,anio,dow);        /// se obtiene la fecha  
+      ds1307_get_time(hora,min,sec);             /// se obtiene la hora
+      ds1307_get_day_of_week(fecha);
+      printf("%s %02u/%02u/20%02u",fecha,dia,mes,anio);
+      printf("  %02u:%02u:%02u",hora, min, sec);
+      delay_ms(200);
+   }
+}

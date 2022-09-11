@@ -1,0 +1,133 @@
+000     @SCRATCH
+001     @SCRATCH
+001     _RETURN_
+002     @SCRATCH
+003     @SCRATCH
+004     ld
+005     hd
+006-007 d
+008-00B x
+00C-00F y
+010-013 z
+014-077 txt
+078-079 avis0
+07A-07B avis1
+07C-07F corr
+080-083 mah1
+084-087 mah2
+088     hr2
+089     min2
+08A     sec2
+08B-08C dato
+08D-090 @PRINTF_L32D_613FPFPF.P1
+08D-090 @SFTOI.P2
+08D     @I2C_READ_1.P3
+08D-08E @PRINTF_LU_613.P4
+08D-08E @ITOF.P5
+08D     @delay_ms1.P6
+08D     @I2C_WRITE_1.P7
+08E     @I2C_READ_1.@SCRATCH1
+08F     @I2C_READ_1.@SCRATCH2
+08F     @PRINTF_LU_613.@SCRATCH1
+090     @PRINTF_LU_613.@SCRATCH2
+091     @PRINTF_L32D_613FPFPF.P1
+091     @PRINTF_LU_613.@SCRATCH3
+092     @PRINTF_LU_613.@SCRATCH4
+092     @PRINTF_L32D_613FPFPF.@SCRATCH1
+093     @PRINTF_LU_613.@SCRATCH5
+093     @PRINTF_L32D_613FPFPF.@SCRATCH2
+094     @PRINTF_LU_613.@SCRATCH6
+094     @PRINTF_L32D_613FPFPF.@SCRATCH3
+095     @PRINTF_LU_613.@SCRATCH7
+095     @PRINTF_L32D_613FPFPF.@SCRATCH4
+096     @PRINTF_L32D_613FPFPF.@SCRATCH5
+097     @PRINTF_L32D_613FPFPF.@SCRATCH6
+098     @PRINTF_L32D_613FPFPF.@SCRATCH7
+099     @PRINTF_L32D_613FPFPF.@SCRATCH8
+09A-09D @MULFF.P1
+09A-09D @FTOSD.P2
+09A     @PUTCHAR_1_.P3
+09A-09D @DIV3232.P4
+09E-0A1 @DIV3232.P1
+09E-0A1 @MULFF.P2
+09E     @FTOSD.@SCRATCH1
+0A2     @MULFF.@SCRATCH1
+0A2     @DIV3232.@SCRATCH1
+0A3     @MULFF.@SCRATCH2
+0A3     @DIV3232.@SCRATCH2
+0A4     @MULFF.@SCRATCH3
+0A4     @DIV3232.@SCRATCH3
+0A5     @DIV3232.@SCRATCH4
+0A6     @DIV3232.@SCRATCH5
+FB4.6   C1OUT
+FB4.7   C2OUT
+FBB     CCP_2
+FBB     CCP_2_LOW
+FBC     CCP_2_HIGH
+FBE     CCP_1_LOW
+FBE     CCP_1
+FBF     CCP_1_HIGH
+FE1-FE2 @READ_PACKED_MEMORY.P1
+FE1-FE2 @WRITE_PACKED_MEMORY.P2
+FE9-FEA @READ_PROGRAM_MEMORY.P1
+FE9-FEA @WRITE_PACKED_MEMORY.P2
+FE9-FEA @READ_PACKED_MEMORY.P3
+FE9-FEA @WRITE_PROGRAM_MEMORY.P4
+FF6-FF8 @READ_PROGRAM_MEMORY.P1
+FF6-FF8 @WRITE_PROGRAM_MEMORY.P2
+
+ROM Allocation:
+000004  @delay_ms1
+00002A  @I2C_WRITE_1
+000072  @I2C_READ_1
+0000BA  @ITOF
+0000F0  @MULFF
+0001E2  datov0
+000320  datov1
+00045E  @SFTOI
+000498  @PUTCHAR_1_
+0004D8  @PRINTF_LU_613
+000594  @FTOSD
+0005D4  @DIV3232
+000662  @PRINTF_L32D_613FPFPF
+0007DC  main
+0007DC  @cinit1
+0007F6  @cinit2
+
+Project Directory:
+    E:\Trabajos U\ELECTIVA INSTRUMENTACION\PROYECTO\ADS1115\
+
+Project Files:
+    main.c                                                  [17-feb.-20 11:25  CRC=D8102B21]
+    main.h                                                  [17-feb.-20 11:06  CRC=D872A938]
+    C:\Program Files (x86)\PICC\Devices\18F2550.h           [02-feb.-20 10:26  CRC=634C93A3]
+    ads1115.c                                               [04-feb.-20 22:45  CRC=3E0B4F9C]
+
+Source signature=8FE60734
+Program memory checksum=0000
+Program memory CRC=0000
+Hex file CRC=A28A
+
+Units:
+    main (main)
+
+Compiler Settings:
+    Processor:      PIC18F2550
+    Pointer Size:   16
+    ADC Range:      0-255
+    Opt Level:      9
+    Short,Int,Long: UNSIGNED: 1,8,16
+    Float,Double:   32,32
+    Compile Mode:       CCS5
+
+Output Files:
+    XREF file:   main.xsym
+    Errors:      main.err
+    Ext Symbols: main.esym
+    INHX32:      main.hex
+    Symbols:     main.sym
+    List:        main.lst
+    Debug/COFF:  main.cof
+    Project:     main.ccspjt
+    Call Tree:   main.tre
+    Statistics:  main.STA

@@ -1,0 +1,11 @@
+#define MMCSD_SPI_HW                // Use hardware SPI module
+#define MMCSD_PIN_SELECT  PIN_A2
+
+#include <18F2550.h>
+#device PASS_STRINGS = IN_RAM
+#fuses HSPLL, PLL2, CPUDIV1
+#use delay(internal = 8MHz)
+#use i2c(Master,Fast,sda=PIN_A1,scl=PIN_A0)
+#use rs232(baud=9600,parity=N,xmit=PIN_A3,rcv=PIN_A4,stream=asd)
+#define DS1307_I2C_NO_STREAM
+#use fast_io(A)

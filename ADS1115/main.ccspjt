@@ -1,0 +1,52 @@
+[PROJECT]
+Target=main.hex
+Processor_Text=PIC18F2550
+CCSVerions=5.059
+Compiler=PCH
+CCSVersion=5.059
+[Target Data]
+FileList=main.c
+[Directories]
+Include=
+[E:\Trabajos U\ELECTIVA INSTRUMENTACION\PROYECTO\ADS1115\main]
+Type=4
+[mru-list]
+1=main.c
+
+[ProjectLog]
+Days=3
+D1=17-02-2020
+D1_L=5
+D1_L1=[39697]Project Opened.
+D1_L2=[39821]Started Editing.
+D1_L3=[40377]Stopped Editing.
+D1_L4=[41082]Started Editing.
+D1_L5=[41242]Project Closed.
+D2=18-04-2021
+D2_L=2
+D2_L1=[38218]Project Opened.
+D2_L2=[38300]Project Closed.
+D3=22-04-2021
+D3_L=2
+D3_L1=[68350]Project Opened.
+D3_L2=[68550]Project Closed.
+
+[Opened Files]
+1=main.c
+t1=1
+2=main.h
+t2=1
+Count=3
+3=ads1115.c
+t3=1
+[main.c]
+Type=4
+
+[defines]
+buildcount=3
+[Units]
+Count=1
+1=main (main)
+
+[fileformats]
+forcecoff=0

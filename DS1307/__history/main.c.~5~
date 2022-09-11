@@ -1,0 +1,15 @@
+#include <main.h>
+#include <DS1307.c>
+#use DS1307_I2C_NO_STREAM
+
+void main()
+{
+
+   while(TRUE)
+   {
+
+
+      //TODO: User Code
+   }
+
+}

@@ -1,0 +1,19 @@
+#include <main.h>
+int a=0,b=0;
+
+void main(){
+   a=0;b=0;
+   delay_ms(10000);
+   printf("AT+CIPSTART="TCP","api.thingspeak.com",80\n\r\n");
+   delay_ms(2000);
+   printf("AT+CIPMODE=1\n\r\n");
+   delay_ms(2000);
+   printf("AT+CIPSEND\n\r\n");
+   delay_ms(2000);
+   while(TRUE){
+      printf("GET https://api.thingspeak.com/update?api_key=S0Q18RYEFRGYNGMG&field1=%u&field2=%u",a,b);
+      a=a+50;
+      b=b+50;
+      delay_ms(10000);
+   }
+}

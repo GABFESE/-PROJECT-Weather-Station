@@ -1,0 +1,19 @@
+#include <main.h>
+#include <BMP085.c>
+float a,b,c,d;
+
+void main(){
+   bmp085Calibration();
+   while(true){
+      c = BMP085Temperature(); 
+      d = _Temp;
+      a = BMP085Pressure(true);  //  calls for temperature first
+      b = BMP085Pressure(false);  // skips temperature reading, assumes done previously 
+      
+      printf("T[c]: %.1g  \n\r",c);
+      printf("T[c]: %.1g  \n\r",d);
+      printf("P[c]: %.1g  \n\r",a);
+      printf("P[c]: %.1g  \n\r\n\r",b);
+      delay_ms(500);
+   }
+}

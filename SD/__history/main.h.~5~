@@ -1,0 +1,12 @@
+// SD card module connections
+#define MMCSD_SPI_HW                // Use hardware SPI module
+#define MMCSD_PIN_SELECT  PIN_C6
+//#define DS1307_I2C_NO_STREAM
+// End SD card module connections
+ 
+#include <18F2550.h>
+#device PASS_STRINGS = IN_RAM
+#fuses HSPLL, PLL2, CPUDIV1
+#use delay(internal = 8MHz)
+#use rs232(baud=9600, xmit=PIN_A3, rcv=PIN_A4)    // Initialize software UART
+#use fast_io(C)

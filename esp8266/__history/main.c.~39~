@@ -1,0 +1,10 @@
+#include <main.h>
+const int8 comillas = '"';
+
+
+void main(){  
+   printf("AT\r\n");
+   delay_ms(1000);
+   printf("AT+CIPSTART=%cTCP%c,%capi.thingspeak.com%c,80\r\n",comillas,comillas,comillas,comillas);
+   delay_ms(1000);
+}

@@ -1,0 +1,426 @@
+CCS PCH C Compiler, Version 5.059, 5967               16-feb.-20 01:42
+
+               Filename:   E:\Trabajos U\ELECTIVA INSTRUMENTACION\PROYECTO\esp8266\cod\main.lst
+
+               ROM used:   768 bytes (2%)
+                           Largest free fragment is 32000
+               RAM used:   9 (0%) at main() level
+                           13 (1%) worst case
+               Stack used: 2 locations
+               Stack size: 31
+
+*
+0000:  GOTO   01DE
+.................... #include <main.h> 
+.................... #include <18F2550.h> 
+.................... //////////// Standard Header file for the PIC18F2550 device //////////////// 
+.................... /////////////////////////////////////////////////////////////////////////// 
+.................... ////        (C) Copyright 1996, 2014 Custom Computer Services          //// 
+.................... //// This source code may only be used by licensed users of the CCS C  //// 
+.................... //// compiler.  This source code may only be distributed to other      //// 
+.................... //// licensed users of the CCS C compiler.  No other use, reproduction //// 
+.................... //// or distribution is permitted without written permission.          //// 
+.................... //// Derivative programs created using this software in object code    //// 
+.................... //// form are not restricted in any way.                               //// 
+.................... /////////////////////////////////////////////////////////////////////////// 
+.................... #device PIC18F2550 
+0004:  DATA 41,54
+0006:  DATA 0D,0A
+0008:  DATA 00,00
+000A:  DATA 41,54
+000C:  DATA 2B,43
+000E:  DATA 49,50
+0010:  DATA 53,54
+0012:  DATA 41,52
+0014:  DATA 54,3D
+0016:  DATA 25,63
+0018:  DATA 54,43
+001A:  DATA 50,25
+001C:  DATA 63,2C
+001E:  DATA 25,63
+0020:  DATA 61,70
+0022:  DATA 69,2E
+0024:  DATA 74,68
+0026:  DATA 69,6E
+0028:  DATA 67,73
+002A:  DATA 70,65
+002C:  DATA 61,6B
+002E:  DATA 2E,63
+0030:  DATA 6F,6D
+0032:  DATA 25,63
+0034:  DATA 2C,38
+0036:  DATA 30,0D
+0038:  DATA 0A,00
+003A:  DATA 41,54
+003C:  DATA 2B,43
+003E:  DATA 49,50
+0040:  DATA 4D,4F
+0042:  DATA 44,45
+0044:  DATA 3D,31
+0046:  DATA 0D,0A
+0048:  DATA 00,00
+004A:  DATA 41,54
+004C:  DATA 2B,43
+004E:  DATA 49,50
+0050:  DATA 53,45
+0052:  DATA 4E,44
+0054:  DATA 0D,0A
+0056:  DATA 00,00
+0058:  DATA 47,45
+005A:  DATA 54,20
+005C:  DATA 68,74
+005E:  DATA 74,70
+0060:  DATA 73,3A
+0062:  DATA 2F,2F
+0064:  DATA 61,70
+0066:  DATA 69,2E
+0068:  DATA 74,68
+006A:  DATA 69,6E
+006C:  DATA 67,73
+006E:  DATA 70,65
+0070:  DATA 61,6B
+0072:  DATA 2E,63
+0074:  DATA 6F,6D
+0076:  DATA 2F,75
+0078:  DATA 70,64
+007A:  DATA 61,74
+007C:  DATA 65,3F
+007E:  DATA 61,70
+0080:  DATA 69,5F
+0082:  DATA 6B,65
+0084:  DATA 79,3D
+0086:  DATA 53,30
+0088:  DATA 51,31
+008A:  DATA 38,52
+008C:  DATA 59,45
+008E:  DATA 46,52
+0090:  DATA 47,59
+0092:  DATA 4E,47
+0094:  DATA 4D,47
+0096:  DATA 26,66
+0098:  DATA 69,65
+009A:  DATA 6C,64
+009C:  DATA 31,3D
+009E:  DATA 25,75
+00A0:  DATA 26,66
+00A2:  DATA 69,65
+00A4:  DATA 6C,64
+00A6:  DATA 32,3D
+00A8:  DATA 25,75
+00AA:  DATA 0D,0A
+00AC:  DATA 00,00
+*
+00EC:  TBLRD*+
+00EE:  MOVF   FF5,F
+00F0:  BZ    010A
+00F2:  MOVFF  FF6,08
+00F6:  MOVFF  FF7,09
+00FA:  MOVFF  FF5,0B
+00FE:  RCALL  00AE
+0100:  MOVFF  08,FF6
+0104:  MOVFF  09,FF7
+0108:  BRA    00EC
+010A:  RETURN 0
+*
+0132:  TBLRD*+
+0134:  MOVFF  FF6,09
+0138:  MOVFF  FF7,0A
+013C:  MOVFF  FF5,0B
+0140:  RCALL  00AE
+0142:  MOVFF  09,FF6
+0146:  MOVFF  0A,FF7
+014A:  DECFSZ 08,F
+014C:  BRA    0132
+014E:  RETURN 0
+0150:  MOVF   0B,W
+0152:  CLRF   01
+0154:  SUBWF  0A,W
+0156:  BC    015E
+0158:  MOVFF  0A,00
+015C:  BRA    0176
+015E:  CLRF   00
+0160:  MOVLW  08
+0162:  MOVWF  0C
+0164:  RLCF   0A,F
+0166:  RLCF   00,F
+0168:  MOVF   0B,W
+016A:  SUBWF  00,W
+016C:  BTFSC  FD8.0
+016E:  MOVWF  00
+0170:  RLCF   01,F
+0172:  DECFSZ 0C,F
+0174:  BRA    0164
+0176:  RETURN 0
+0178:  MOVF   01,W
+017A:  MOVFF  08,0A
+017E:  MOVLW  64
+0180:  MOVWF  0B
+0182:  RCALL  0150
+0184:  MOVFF  00,08
+0188:  MOVF   01,W
+018A:  MOVLW  30
+018C:  BNZ   019C
+018E:  BTFSS  09.1
+0190:  BRA    01AA
+0192:  BTFSC  09.3
+0194:  BRA    01AA
+0196:  BTFSC  09.4
+0198:  MOVLW  20
+019A:  BRA    01A2
+019C:  BCF    09.3
+019E:  BCF    09.4
+01A0:  BSF    09.0
+01A2:  ADDWF  01,F
+01A4:  MOVFF  01,0B
+01A8:  RCALL  00AE
+01AA:  MOVFF  08,0A
+01AE:  MOVLW  0A
+01B0:  MOVWF  0B
+01B2:  RCALL  0150
+01B4:  MOVFF  00,08
+01B8:  MOVF   01,W
+01BA:  MOVLW  30
+01BC:  BNZ   01CA
+01BE:  BTFSC  09.3
+01C0:  BRA    01D2
+01C2:  BTFSS  09.0
+01C4:  BRA    01D2
+01C6:  BTFSC  09.4
+01C8:  MOVLW  20
+01CA:  ADDWF  01,F
+01CC:  MOVFF  01,0B
+01D0:  RCALL  00AE
+01D2:  MOVLW  30
+01D4:  ADDWF  08,F
+01D6:  MOVFF  08,0B
+01DA:  RCALL  00AE
+01DC:  RETURN 0
+....................  
+.................... #list 
+....................  
+.................... #use delay(internal=8MHz) 
+*
+010C:  CLRF   FEA
+010E:  MOVLW  09
+0110:  MOVWF  FE9
+0112:  MOVF   FEF,W
+0114:  BZ    0130
+0116:  MOVLW  02
+0118:  MOVWF  01
+011A:  CLRF   00
+011C:  DECFSZ 00,F
+011E:  BRA    011C
+0120:  DECFSZ 01,F
+0122:  BRA    011A
+0124:  MOVLW  97
+0126:  MOVWF  00
+0128:  DECFSZ 00,F
+012A:  BRA    0128
+012C:  DECFSZ FEF,F
+012E:  BRA    0116
+0130:  RETURN 0
+.................... #use rs232(baud=115200,parity=N,xmit=PIN_A3,rcv=PIN_A4,stream=asd) 
+*
+00AE:  BCF    F92.3
+00B0:  BCF    F89.3
+00B2:  MOVLW  08
+00B4:  MOVWF  01
+00B6:  BRA    00B8
+00B8:  NOP   
+00BA:  BSF    01.7
+00BC:  BRA    00E2
+00BE:  BCF    01.7
+00C0:  MOVFF  0B,02
+00C4:  RRCF   02,F
+00C6:  BTFSC  FD8.0
+00C8:  BSF    F89.3
+00CA:  BTFSS  FD8.0
+00CC:  BCF    F89.3
+00CE:  BSF    01.6
+00D0:  BRA    00E2
+00D2:  BCF    01.6
+00D4:  DECFSZ 01,F
+00D6:  BRA    00C4
+00D8:  MOVFF  02,0B
+00DC:  BRA    00DE
+00DE:  NOP   
+00E0:  BSF    F89.3
+00E2:  BTFSC  01.7
+00E4:  BRA    00BE
+00E6:  BTFSC  01.6
+00E8:  BRA    00D2
+00EA:  RETURN 0
+....................  
+....................  
+.................... const int8 comillas = '"'; 
+.................... int a=0,b=0; 
+....................  
+.................... void main(){   
+*
+01DE:  CLRF   FF8
+01E0:  BCF    FD0.7
+01E2:  MOVLW  70
+01E4:  MOVWF  FD3
+01E6:  MOVF   FD3,W
+01E8:  BCF    F92.3
+01EA:  BSF    F89.3
+01EC:  CLRF   04
+01EE:  CLRF   05
+01F0:  CLRF   07
+01F2:  CLRF   06
+01F4:  MOVF   FC1,W
+01F6:  ANDLW  C0
+01F8:  IORLW  0F
+01FA:  MOVWF  FC1
+01FC:  MOVLW  07
+01FE:  MOVWF  FB4
+....................    printf("AT\r\n"); 
+0200:  MOVLW  04
+0202:  MOVWF  FF6
+0204:  MOVLW  00
+0206:  MOVWF  FF7
+0208:  RCALL  00EC
+....................    delay_ms(10000); 
+020A:  MOVLW  28
+020C:  MOVWF  08
+020E:  MOVLW  FA
+0210:  MOVWF  09
+0212:  RCALL  010C
+0214:  DECFSZ 08,F
+0216:  BRA    020E
+....................    printf("AT+CIPSTART=%cTCP%c,%capi.thingspeak.com%c,80\r\n",comillas,comillas,comillas,comillas); 
+0218:  MOVLW  0A
+021A:  MOVWF  FF6
+021C:  MOVLW  00
+021E:  MOVWF  FF7
+0220:  MOVLW  0C
+0222:  MOVWF  08
+0224:  RCALL  0132
+0226:  MOVLW  22
+0228:  MOVWF  0B
+022A:  RCALL  00AE
+022C:  MOVLW  18
+022E:  MOVWF  FF6
+0230:  MOVLW  00
+0232:  MOVWF  FF7
+0234:  MOVLW  03
+0236:  MOVWF  08
+0238:  RCALL  0132
+023A:  MOVLW  22
+023C:  MOVWF  0B
+023E:  RCALL  00AE
+0240:  MOVLW  2C
+0242:  MOVWF  0B
+0244:  RCALL  00AE
+0246:  MOVLW  22
+0248:  MOVWF  0B
+024A:  RCALL  00AE
+024C:  MOVLW  20
+024E:  MOVWF  FF6
+0250:  MOVLW  00
+0252:  MOVWF  FF7
+0254:  MOVLW  12
+0256:  MOVWF  08
+0258:  RCALL  0132
+025A:  MOVLW  22
+025C:  MOVWF  0B
+025E:  RCALL  00AE
+0260:  MOVLW  34
+0262:  MOVWF  FF6
+0264:  MOVLW  00
+0266:  MOVWF  FF7
+0268:  MOVLW  05
+026A:  MOVWF  08
+026C:  RCALL  0132
+....................    delay_ms(1000); 
+026E:  MOVLW  04
+0270:  MOVWF  08
+0272:  MOVLW  FA
+0274:  MOVWF  09
+0276:  RCALL  010C
+0278:  DECFSZ 08,F
+027A:  BRA    0272
+....................    printf("AT+CIPMODE=1\r\n"); 
+027C:  MOVLW  3A
+027E:  MOVWF  FF6
+0280:  MOVLW  00
+0282:  MOVWF  FF7
+0284:  RCALL  00EC
+....................    delay_ms(1000); 
+0286:  MOVLW  04
+0288:  MOVWF  08
+028A:  MOVLW  FA
+028C:  MOVWF  09
+028E:  RCALL  010C
+0290:  DECFSZ 08,F
+0292:  BRA    028A
+....................    printf("AT+CIPSEND\r\n"); 
+0294:  MOVLW  4A
+0296:  MOVWF  FF6
+0298:  MOVLW  00
+029A:  MOVWF  FF7
+029C:  RCALL  00EC
+....................    delay_ms(1000); 
+029E:  MOVLW  04
+02A0:  MOVWF  08
+02A2:  MOVLW  FA
+02A4:  MOVWF  09
+02A6:  RCALL  010C
+02A8:  DECFSZ 08,F
+02AA:  BRA    02A2
+....................    while(1){ 
+....................       printf("GET https://api.thingspeak.com/update?api_key=S0Q18RYEFRGYNGMG&field1=%u&field2=%u\r\n",a,b); 
+02AC:  MOVLW  58
+02AE:  MOVWF  FF6
+02B0:  MOVLW  00
+02B2:  MOVWF  FF7
+02B4:  MOVLW  46
+02B6:  MOVWF  08
+02B8:  RCALL  0132
+02BA:  MOVFF  04,08
+02BE:  MOVLW  1B
+02C0:  MOVWF  09
+02C2:  RCALL  0178
+02C4:  MOVLW  A0
+02C6:  MOVWF  FF6
+02C8:  MOVLW  00
+02CA:  MOVWF  FF7
+02CC:  MOVLW  08
+02CE:  MOVWF  08
+02D0:  RCALL  0132
+02D2:  MOVFF  05,08
+02D6:  MOVLW  1B
+02D8:  MOVWF  09
+02DA:  RCALL  0178
+02DC:  MOVLW  0D
+02DE:  MOVWF  0B
+02E0:  RCALL  00AE
+02E2:  MOVLW  0A
+02E4:  MOVWF  0B
+02E6:  RCALL  00AE
+....................       a=a+20; 
+02E8:  MOVLW  14
+02EA:  ADDWF  04,F
+....................       b=b+20; 
+02EC:  ADDWF  05,F
+....................       delay_ms(20000); 
+02EE:  MOVLW  50
+02F0:  MOVWF  08
+02F2:  MOVLW  FA
+02F4:  MOVWF  09
+02F6:  RCALL  010C
+02F8:  DECFSZ 08,F
+02FA:  BRA    02F2
+02FC:  BRA    02AC
+....................    } 
+.................... } 
+02FE:  SLEEP 
+
+Configuration Fuses:
+   Word  1: C827   PLL12 CPUDIV1 USBDIV INTRC_IO FCMEN IESO
+   Word  2: 1E3E   PUT BROWNOUT BORV21 VREGEN NOWDT WDT32768
+   Word  3: 8700   CCP2C1 PBADEN LPT1OSC MCLR
+   Word  4: 0081   STVREN NOLVP NOXINST NODEBUG
+   Word  5: C00F   NOPROTECT NOCPB NOCPD
+   Word  6: E00F   NOWRT NOWRTC NOWRTB NOWRTD
+   Word  7: 400F   NOEBTR NOEBTRB

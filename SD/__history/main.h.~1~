@@ -1,0 +1,5 @@
+#include <18F2550.h>
+#device ADC=10
+#use delay(clock=20000000,crystal=32MHz)
+#use rs232(baud=9600,parity=N,xmit=None,rcv=None,bits=8,stream=PORT1)
+

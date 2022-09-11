@@ -1,0 +1,118 @@
+000     @SCRATCH
+001     @SCRATCH
+001     _RETURN_
+002     @SCRATCH
+003     @SCRATCH
+004-00A c_time
+00B-00C mytime
+00D     OSC_Disable.sec_reg
+00D-00E RTC_Set.time_t
+00D     bcd_to_decimal.number
+00D     RTC_Get.@SCRATCH1
+00D     rtc_print.@SCRATCH1
+00D     main.@SCRATCH1
+00E     RTC_Write_Reg.reg_address
+00E     @delay_ms1.P1
+00E     bcd_to_decimal.@SCRATCH1
+00E     rtc_print.@SCRATCH2
+00E     main.@SCRATCH2
+00F     RTC_Set.sec_reg
+00F     RTC_Write_Reg.reg_value
+00F     rtc_print.@SCRATCH3
+010     RTC_Read_Reg.reg_address
+010     @PSTRINGCN_618.P1
+010     @PRINTF_U_618.P2
+010     RTC_Set.@SCRATCH1
+011     RTC_Read_Reg.reg_data
+011     @PRINTF_U_618.P1
+011     RTC_Set.@SCRATCH2
+011     @PSTRINGCN_618.@SCRATCH1
+012     @I2C_WRITE_1.P1
+012     @I2C_READ_1.P2
+012     RTC_Set.@SCRATCH3
+012     @PSTRINGCN_618.@SCRATCH2
+013     @PUTCHAR_1_.P1
+013     decimal_to_bcd.number
+013     @I2C_READ_1.@SCRATCH1
+014     @I2C_READ_1.@SCRATCH2
+014     decimal_to_bcd.@SCRATCH1
+015     @DIV88.P1
+016     @DIV88.P1
+017     @DIV88.@SCRATCH1
+FB4.6   C1OUT
+FB4.7   C2OUT
+FBB     CCP_2
+FBB     CCP_2_LOW
+FBC     CCP_2_HIGH
+FBE     CCP_1
+FBE     CCP_1_LOW
+FBF     CCP_1_HIGH
+FE1-FE2 @WRITE_PACKED_MEMORY.P1
+FE1-FE2 @READ_PACKED_MEMORY.P2
+FE9-FEA @WRITE_PROGRAM_MEMORY.P1
+FE9-FEA @WRITE_PACKED_MEMORY.P2
+FE9-FEA @READ_PROGRAM_MEMORY.P3
+FE9-FEA @READ_PACKED_MEMORY.P4
+FF6-FF8 @WRITE_PROGRAM_MEMORY.P1
+FF6-FF8 @READ_PROGRAM_MEMORY.P2
+
+ROM Allocation:
+000004  @const706.call
+00001A  @const712.call
+000034  @delay_ms1
+00005A  @I2C_WRITE_1
+0000A2  @I2C_READ_1
+0000EA  bcd_to_decimal
+000104  RTC_Get
+0001DC  @PUTCHAR_1_
+00021A  @PSTRINGCN_618
+000238  @DIV88
+000260  @PRINTF_U_618
+0002C6  rtc_print
+0003A8  RTC_Read_Reg
+000404  decimal_to_bcd
+000428  RTC_Set
+00060A  RTC_Write_Reg
+000646  OSC_Disable
+00065C  @cinit1
+00065C  main
+000676  @cinit2
+
+Project Directory:
+    E:\Trabajos U\ELECTIVA INSTRUMENTACION\PROYECTO\DS1307\
+
+Project Files:
+    main.c                                                  [19-feb.-20 09:04  CRC=CA235FB2]
+    main.h                                                  [17-feb.-20 03:08  CRC=D872A938]
+    C:\Program Files (x86)\PICC\Devices\18F2550.h           [02-feb.-20 10:26  CRC=634C93A3]
+    C:\Program Files (x86)\PICC\Drivers\DS1307.c            [16-feb.-20 21:02  CRC=AAB994EC]
+    C:\Program Files (x86)\PICC\Drivers\stdint.h            [06-may.-16 11:24  CRC=FE3369EA]
+
+Source signature=AD03054D
+Program memory checksum=0000
+Program memory CRC=0000
+Hex file CRC=B5ED
+
+Units:
+    main (main)
+
+Compiler Settings:
+    Processor:      PIC18F2550
+    Pointer Size:   16
+    ADC Range:      0-255
+    Opt Level:      9
+    Short,Int,Long: UNSIGNED: 1,8,16
+    Float,Double:   32,32
+    Compile Mode:       CCS5
+
+Output Files:
+    XREF file:   main.xsym
+    Errors:      main.err
+    Ext Symbols: main.esym
+    INHX32:      main.hex
+    Symbols:     main.sym
+    List:        main.lst
+    Debug/COFF:  main.cof
+    Project:     main.ccspjt
+    Call Tree:   main.tre
+    Statistics:  main.STA

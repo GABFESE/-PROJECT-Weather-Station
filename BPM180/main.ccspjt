@@ -1,0 +1,57 @@
+[PROJECT]
+Target=main.hex
+Processor_Text=PIC18F2550
+CCSVerions=5.059
+Compiler=PCH
+CCSVersion=5.059
+[Target Data]
+FileList=main.c
+[Directories]
+Include=
+[E:\Trabajos U\ELECTIVA INSTRUMENTACION\PROYECTO\BPM180\main]
+Type=4
+[mru-list]
+1=main.c
+
+[ProjectLog]
+Days=1
+D1=15-02-2020
+D1_L=19
+D1_L1=[39124]Project Closed.
+D1_L2=[39124]Project Opened.
+D1_L3=[39181]Started Editing.
+D1_L4=[39492]Stopped Editing.
+D1_L5=[39984]Started Editing.
+D1_L6=[40317]Stopped Editing.
+D1_L7=[40879]Started Editing.
+D1_L8=[41298]Stopped Editing.
+D1_L9=[42237]Started Editing.
+D1_L10=[43492]Stopped Editing.
+D1_L11=[44732]Started Editing.
+D1_L12=[45068]Stopped Editing.
+D1_L13=[45753]Started Editing.
+D1_L14=[46058]Stopped Editing.
+D1_L15=[46965]Started Editing.
+D1_L16=[47865]Stopped Editing.
+D1_L17=[48222]Started Editing.
+D1_L18=[48794]Stopped Editing.
+D1_L19=[48881]Started Editing.
+
+[Opened Files]
+1=main.c
+t1=1
+Count=4
+2=BMP085.c
+t2=230
+3=main.h
+t3=1
+4=BMP085v2.c
+t4=1
+[main.c]
+Type=4
+
+[defines]
+buildcount=19
+[Units]
+Count=1
+1=main (main)
