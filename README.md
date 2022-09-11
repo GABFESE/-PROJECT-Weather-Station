@@ -20,4 +20,4 @@ esp8266 = Used as WiFi module.
 
 SD = Module for reading and writing a Micro SD card.
 
-mai = complete Proyect.
+main = complete Proyect.
