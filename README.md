@@ -6,10 +6,10 @@ The main idea of the project was to take variables from the environment, store t
 
 thingspeak = Data collection in the cloud with advanced data analysis using MATLAB.
 
-
 the modules used for the project were tested separately, being these:
 
 ADS1115 = 16-bit analog digital converter ADC, with I2C communication method.
+
 BPM180 = Digital barometric pressure sensor module, with I2C communication method.
 
 DHT22 = temperature and relative humidity sensor.
